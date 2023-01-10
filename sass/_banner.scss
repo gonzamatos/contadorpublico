@@ -8,8 +8,7 @@
     background-size: cover;
     background-position: center center;
     height: 100vh;    
-    .titulo {
-        position: relative;
+    .titulo {        
         font-family: 'Poppins', sans-serif;        
         font-size: 90px;
         -webkit-text-stroke: 1px #fff;
@@ -32,8 +31,7 @@
 }
 
 @media only screen and (max-width: 521px) {
-    #hero .titulo {
-        position: relative;
+    #hero .titulo {        
         font-family: 'Poppins', sans-serif;        
         font-size: 60px;
         -webkit-text-stroke: 1px #fff;
