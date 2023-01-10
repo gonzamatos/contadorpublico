@@ -1,0 +1,47 @@
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./fotos/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;    
+    .titulo {
+        position: relative;
+        font-family: 'Poppins', sans-serif;        
+        font-size: 90px;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        background-image: linear-gradient(#fff, #fff);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -950px 0;
+        animation: backcolor 5s linear infinite alternate;
+    }
+    @keyframes backcolor {
+        100% {
+            background-position:0 0;
+        }        
+    }
+    p {
+        font-size: 25px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 521px) {
+    #hero .titulo {
+        position: relative;
+        font-family: 'Poppins', sans-serif;        
+        font-size: 70px;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        background-image: linear-gradient(#fff, #fff);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -450px 0;
+        animation: backcolor 3s linear infinite alternate;
+    }
+}
