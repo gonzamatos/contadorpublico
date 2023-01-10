@@ -1,0 +1,107 @@
+#consultor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    height: 100vh;    
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./fotos/fondo3.png);
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    .contenedor-titulo {
+        display: flex;        
+        flex-direction: column;
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 100px;
+            color: white;
+        }
+        p {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            color: white;
+            padding-top: 50px;
+        }
+    }    
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        grid-column-gap: 20px;
+        .contenedor-consulta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            width: 300px;
+            height: 350px;
+            background-color: #555994;
+            border-top: 3px solid #242458;
+            border-left: 3px solid #242458;
+            box-shadow: 10px 10px 10px 5px #242458;
+            gap: 20px;
+            h3 {
+                font-size: 30px;
+                color: white;
+            }
+            i {
+                font-size: 40px;
+                margin-top: 48px;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li {
+                    color: white;
+                    list-style: none;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+            }    
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #consultor {
+        height: 100vh;
+        padding: 0;
+    }
+    #consultor .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #consultor {
+        height: 100%;        
+        padding-bottom: 40px;
+    }
+    #consultor .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    #consultor .contenedor-titulo {
+        padding: 40px;
+    }    
+    #consultor .contenedor-titulo h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 4.2rem;
+    }
+    #consultor .contenedor-titulo p {
+        text-align: center;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+}

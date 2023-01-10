@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norberto Contador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo nav-link">Logo</a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#hero" class="nav-menu-link nav-link">Inicio</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#consultor" class="nav-menu-link nav-link">Servicios</a>
+                </li>                
+                <li class="nav-menu-item">
+                    <a href="#faq" class="nav-menu-link nav-link">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1 class="titulo">Norberto Pelliccioni</h1>
+        <p>Contador Publico</p>
+        <p>Mi equipo, es muy cohesionado y muy profesional para tratar su problema.</p>
+    </section>
+    <section id="consultor">
+        <div class="contenedor-titulo">
+            <h2>Haga sus consultas</h2>
+            <p>HONORARIOS ESTABLECIDOS POR LOS CONSEJOS PROFESIONALES DE CAPITAL Y PROVINCIA</p>
+        </div>
+        <div class="contenedor">
+            <div class="contenedor-consulta">
+                <i class="fa-solid fa-user"></i>
+                <h3>Monotributistass</h3>
+                <ul>
+                    <li>Altas y Bajas</li>
+                    <li>Recategorizaciones</li>
+                    <li>Facturación</li>
+                    <li>Planes de Pago</li>
+                </ul>
+            </div>
+            <div class="contenedor-consulta">
+                <i class="fa-solid fa-house"></i>
+                <h3>Resp. Inscripctos</h3>
+                <ul>
+                    <li>Altas y Bajas</li>a
+                    <li>Declaraciones Juradas</li>
+                    <li>Facturación</li>
+                    <li>Regnimen Simplificado</li>
+                </ul>
+            </div>
+            <div class="contenedor-consulta">
+                <i class="fa-sharp fa-solid fa-building"></i>
+                <h3>Sociedades</h3>
+                <ul>
+                    <li>Creación de Sociedades</li>
+                    <li>Impuestos</li>
+                    <li>Facturación</li>
+                    <li>Contabilidad de Empresas</li>
+                </ul>
+            </div>
+            <div class="contenedor-consulta">
+                <i class="fa-brands fa-stack-overflow"></i>
+                <h3>Otras Consultas</h3>
+                <ul>
+                    <li>Costos de Producción</li>
+                    <li>Auditoria</li>
+                    <li>Asesoria Contable</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">¿Qué es el monotributo?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            El monotributo unifica el componente impositivo -IVA y Ganancias- y el componente previsional -aportes jubilatorios y obra social- en una única cuota mensual, haciendo más simple y ágil cumplir con tus obligaciones. Se deben cumplir con determinados valores de parámetros como facturación anual, superficie de locales, energía eléctrica consumida y el monto de alquiler del local/es.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">¿Cuáles son las categorías del Nuevo Régimen de Monotributo y sus valores?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Para conocer categorías, características y valores, te recomendamos la consulta a la <a href="https://www.afip.gob.ar/monotributo/categorias.asp">Tabla de categorías</a> publicada por AFIP.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">¿Cómo se me asigna una categoría?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            La categoría se te asigna en base al detalle de tus actividades:
+                            El tipo de actividad que desarrollas: venta de productos o prestación de servicios.
+                            Si la actividad se lleva a cabo en un local o establecimiento en particular, se tiene en cuenta:
+                            La superficie afectada.
+                            El total anual de energía eléctrica consumida en kilowatts.
+                            El monto a pagar por el alquiler anualmente.
+                            El ingreso bruto anual: es un cálculo anual estimativo de los ingresos que se obtienen por el desarrollo de la actividad, es decir la facturación anual teniendo en cuenta los gastos e inversiones.                            
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
+                        <span class="accordion-title">¿Qué es la recategorización?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Es la evaluación de parámetros que deben realizar las y los monotributistas para saber si deben mantener la categoría en la que se encuentran o deben modificarla. Si dichos parámetros superan o son inferiores a los de la categoría vigente corresponde realizar la recategorización. <br>
+                            <br>No deberán efectuar ninguna acción quienes mantengan la misma categoría. <br>                        
+                            <br>Los períodos de recategorización son cada 6 meses, en enero y julio, y cuando llegan se debe evaluar la actividad de los últimos 12 meses; si hubo cambios en los ingresos, alquileres y demás, hay que ingresar con clave fiscal para recategorizarse; si no se hace, se entiende que no hubo cambios y se permanece en la misma categoría.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false">
+                        <span class="accordion-title">¿Puede la AFIP recategorizarme sin que yo haya resuelto hacerlo?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Sí. En caso de que los movimientos de tu cuenta bancaria o las operaciones que realizaste con tarjeta de crédito hicieran presuponer que tenés ingresos superiores a los que declaraste para tu categoría (un 20% más si sos prestador de servicios o un 30% más si te dedicás a la venta de bienes muebles), la AFIP te reconvertirá automáticamente a una categoría superior a la registrada. Si se da esta situación, contás con 30 días de plazo desde la notificación a tu correo electrónico o con 15 días luego de haber sido intimado, para explicar tales movimientos y justificar tu permanencia en el anterior encuadramiento.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false">
+                        <span class="accordion-title">Como monotributista, ¿puedo tener empleados en relación de dependencia?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Sí, pero vas a tener que inscribirte como empleador e ingresar los aportes y contribuciones de tus empleados a través del Régimen General de Empleadores de AFIP.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false">
+                        <span class="accordion-title">¿Cuál es la diferencia entre Responsable Inscripto y Monotributo?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            La diferencia radica en que el monotributista no genera débito fiscal en sus ventas por qué está exento de IVA. Una parte de la cuota mensual que paga sustituye al IVA. <br>
+                            <br>Por ello, en las facturas que emiten los monotributistas no hay ningún impuesto discriminado. <br>         
+                            <br>En cambio, cuando un responsable inscripto realice ventas, locaciones o prestaciones de servicios gravadas, está generando un débito fiscal. Ese débito fiscal será discriminado o no en la factura según a quien se la emita (si la emite a un consumidor final, no deberá discriminar el impuesto).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>ESTUDIO CONTABLE</h3>
+            <p>DR. C.P. NORBERTO A. PELLICCIONI, CONTADOR
+                PÚBLICO, T.166 F.11, CPCECABA,</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>        
+    </footer>
+    <a href=""class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>
