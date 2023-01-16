@@ -48,20 +48,19 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 992px;
   margin: 0 auto;
+}
+
+.logo-p {
+  width: 117px;
+  height: 80px;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
-}
-
-.logo {
-  font-size: 30px;
-  font-weight: bold;
-  padding: 0 40px;
-  line-height: 80px;
 }
 
 .nav-menu {
@@ -105,12 +104,18 @@ body {
 /* MOBILE */
 @media (max-width: 768px) {
   .header {
-    height: 60px;
+    height: 80px;
   }
-  .logo {
-    font-size: 25px;
-    padding: 0 20px;
-    line-height: 60px;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .logo-p {
+    margin-left: 20px;
   }
   .nav-menu {
     flex-direction: column;
